@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRAMA – Assuring Fairness</title>
 
-    <!-- Google Font -->
+    <title>KRAMA – Building trust through transparency</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -60,7 +60,6 @@
         .brand span {
             font-size: 22px;
             font-weight: 700;
-            letter-spacing: 0.4px;
         }
 
         nav a {
@@ -72,13 +71,12 @@
 
         .nav-right {
             display: flex;
-            align-items: center;
             gap: 18px;
         }
 
         .btn {
             background: var(--primary);
-            color: white;
+            color: #fff;
             padding: 10px 18px;
             border-radius: 6px;
             text-decoration: none;
@@ -99,12 +97,11 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 32px;
-            color: #ffffff;
+            color: #fff;
         }
 
         .hero h1 {
             font-size: clamp(40px, 6vw, 64px);
-            font-weight: 700;
             max-width: 720px;
             line-height: 1.15;
         }
@@ -142,14 +139,43 @@
             border: 1px solid #eee;
         }
 
-        .card h3 {
-            font-size: 22px;
-            margin-bottom: 14px;
+        /* ---------- INTEREST SECTION ---------- */
+        .interest-section {
+            background: var(--light);
+            padding: 90px 32px;
         }
 
-        .card p {
-            font-size: 17px;
-            color: var(--gray);
+        .interest-section h2 {
+            max-width: 1200px;
+            margin: 0 auto 48px;
+            font-size: 32px;
+        }
+
+        .interest-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 36px;
+        }
+
+        .interest-card {
+            background: #fff;
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid #eee;
+        }
+
+        .interest-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .contact-box span {
+            font-size: 36px;
         }
 
         /* ---------- FOOTER ---------- */
@@ -157,17 +183,13 @@
             border-top: 1px solid #eee;
             padding: 36px;
             text-align: center;
-            color: var(--gray);
             font-size: 14px;
+            color: var(--gray);
         }
 
         @media (max-width: 768px) {
-            nav {
-                display: none;
-            }
-            .hero {
-                height: 70vh;
-            }
+            nav { display: none; }
+            .hero { height: 70vh; }
         }
     </style>
 </head>
@@ -182,85 +204,77 @@
         </div>
 
         <nav>
-            <a href="#">About us</a>
-            <a href="#">Solutions</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="solutions.html">Solutions</a>
         </nav>
 
         <div class="nav-right">
             <a href="#" class="btn">Get certified</a>
-            <a href="#">EN</a>
-            <a href="#">Login</a>
         </div>
     </div>
 </header>
 
 <section class="hero">
     <div class="hero-content">
-        <h1>Fostering fair and transparent value chains</h1>
+        <h1>Building trust through transparency</h1>
     </div>
 </section>
 
 <section class="section">
-    <h2>KRAMA is on a mission to assure fairness</h2>
+    <h2>KRAMA’s mission</h2>
     <p>
-        KRAMA works to strengthen trust and integrity across supply chains by enabling
-        transparency, accountability, and credible traceability from producers to markets.
+        KRAMA strengthens trust across Cambodia’s value chains by promoting transparency,
+        accountability, and credible traceability from origin to market.
     </p>
 
     <div class="cards">
         <div class="card">
             <h3>Mission</h3>
             <p>
-                KRAMA is committed to strengthening trust across Cambodia’s value chains
-                by promoting transparency, accountability, and shared pride in local production.
+                We build trust across local value chains by enabling transparent,
+                accountable, and verifiable production systems.
             </p>
         </div>
 
         <div class="card">
             <h3>Vision</h3>
             <p>
-                KRAMA envisions a connected ecosystem where people, products, and provenance
-                are linked through a trusted and transparent traceability network.
+                A connected ecosystem where people, products, and provenance are linked
+                through trusted traceability.
             </p>
         </div>
     </div>
 </section>
+
 <section class="interest-section">
     <h2>You may also be interested in</h2>
 
     <div class="interest-grid">
         <div class="interest-card">
-            <img src="./Folder/EUDR.jpeg" alt="News">
+            <img src="./Folder/EUDR.jpeg" alt="">
             <h3>News & Updates</h3>
-            <p>
-                Stay informed about KRAMA’s latest initiatives, field activities,
-                and insights on traceability and responsible sourcing.
-            </p>
+            <p>Latest field activities and insights.</p>
         </div>
 
         <div class="interest-card">
-            <img src="./Folder/fairtrade.webp" alt="Traceability search">
+            <img src="./Folder/fairtrade.webp" alt="">
             <h3>Traceability Search</h3>
-            <p>
-                Explore KRAMA’s traceability network to verify producers, products,
-                and value-chain actors through trusted data.
-            </p>
+            <p>Verify producers and products.</p>
         </div>
 
         <div class="interest-card">
             <div class="contact-box">
                 <span>💬</span>
                 <h3>Raise a Concern</h3>
-                <p>
-                    Contact us if you believe a registered actor is not complying
-                    with agreed transparency or traceability standards.
-                </p>
+                <p>Report non-compliance confidentially.</p>
             </div>
         </div>
     </div>
 </section>
+
 <footer>
-    © 2026 KRAMA · Assuring Fairness
+    © 2026 KRAMA · Building trust through transparency
 </footer>
 
 </body>
