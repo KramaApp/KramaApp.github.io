@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLOCERT – Assuring Fairness</title>
+    <title>KRAMA – Assuring Fairness</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -33,7 +32,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 18px 60px;
+            padding: 16px 60px;
             background: white;
             position: sticky;
             top: 0;
@@ -41,9 +40,20 @@
             border-bottom: 1px solid #eee;
         }
 
-        .logo {
-            font-weight: 700;
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand img {
+            height: 42px;
+            width: auto;
+        }
+
+        .brand span {
             font-size: 22px;
+            font-weight: 700;
             letter-spacing: 0.5px;
         }
 
@@ -72,9 +82,9 @@
         /* ---------- HERO ---------- */
         .hero {
             height: 80vh;
-            background: 
+            background:
                 linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-                url("Screenshot 2026-01-17 at 2.25.29 pm.png") center/cover no-repeat;
+                url("honest_cashew.webp") center / cover no-repeat;
             display: flex;
             align-items: center;
             padding: 0 60px;
@@ -122,15 +132,15 @@
             header {
                 padding: 16px 24px;
             }
+            nav {
+                display: none;
+            }
             .hero {
                 padding: 0 24px;
                 height: 70vh;
             }
             .section {
                 padding: 60px 24px;
-            }
-            nav {
-                display: none;
             }
         }
     </style>
@@ -139,7 +149,10 @@
 <body>
 
 <header>
-    <div class="logo">FLOCERT</div>
+    <div class="brand">
+        <img src="Krama.jpg" alt="KRAMA logo">
+        <span>KRAMA</span>
+    </div>
 
     <nav>
         <a href="#">About us</a>
@@ -158,16 +171,16 @@
 </section>
 
 <section class="section">
-    <h2>FLOCERT is on a mission to assure fairness</h2>
+    <h2>KRAMA is on a mission to assure fairness</h2>
     <p>
-        FLOCERT is one of the world's leading social auditing and certification bodies,
-        and the global certification body for <a href="#">Fairtrade</a>.
-        We envision a world where business success and ethical responsibility go hand in hand.
+        KRAMA is a leading social auditing and certification body, working to ensure
+        ethical responsibility and business success go hand in hand across global
+        supply chains.
     </p>
 </section>
 
 <footer>
-    © 2026 FLOCERT · Assuring Fairness
+    © 2026 KRAMA · Assuring Fairness
 </footer>
 
 </body>
