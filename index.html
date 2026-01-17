@@ -69,11 +69,6 @@
             font-weight: 500;
         }
 
-        .nav-right {
-            display: flex;
-            gap: 18px;
-        }
-
         .btn {
             background: var(--primary);
             color: #fff;
@@ -139,6 +134,11 @@
             border: 1px solid #eee;
         }
 
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
         /* ---------- INTEREST SECTION ---------- */
         .interest-section {
             background: var(--light);
@@ -164,6 +164,14 @@
             padding: 28px;
             border-radius: 12px;
             border: 1px solid #eee;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .interest-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
         }
 
         .interest-card img {
@@ -209,9 +217,7 @@
             <a href="solutions.html">Solutions</a>
         </nav>
 
-        <div class="nav-right">
-            <a href="#" class="btn">Get certified</a>
-        </div>
+        <a href="#" class="btn">Get started</a>
     </div>
 </header>
 
@@ -222,17 +228,19 @@
 </section>
 
 <section class="section">
-    <h2>KRAMA’s mission</h2>
+    <h2>What is KRAMA?</h2>
     <p>
-        KRAMA strengthens trust across Cambodia’s value chains by promoting transparency,
-        accountability, and credible traceability from origin to market.
+        KRAMA is an independent organisation that strengthens trust across Cambodia’s
+        value chains by enabling transparency, traceability, and accountability.
+        We support producers, businesses, and partners with credible systems that
+        connect products from origin to market.
     </p>
 
     <div class="cards">
         <div class="card">
             <h3>Mission</h3>
             <p>
-                We build trust across local value chains by enabling transparent,
+                To build trust across local value chains by enabling transparent,
                 accountable, and verifiable production systems.
             </p>
         </div>
@@ -240,8 +248,8 @@
         <div class="card">
             <h3>Vision</h3>
             <p>
-                A connected ecosystem where people, products, and provenance are linked
-                through trusted traceability.
+                A connected ecosystem where people, products, and provenance are
+                linked through trusted traceability.
             </p>
         </div>
     </div>
@@ -251,25 +259,28 @@
     <h2>You may also be interested in</h2>
 
     <div class="interest-grid">
-        <div class="interest-card">
-            <img src="./Folder/EUDR.jpeg" alt="">
+        <a href="#" class="interest-card">
+            <img src="./Folder/EUDR.jpeg" alt="News">
             <h3>News & Updates</h3>
-            <p>Latest field activities and insights.</p>
-        </div>
+            <p>Latest initiatives, field activities, and insights.</p>
+        </a>
 
-        <div class="interest-card">
-            <img src="./Folder/fairtrade.webp" alt="">
+        <a href="traceability.html" class="interest-card">
+            <img src="./Folder/traceability.webp" alt="Traceability Search">
             <h3>Traceability Search</h3>
-            <p>Verify producers and products.</p>
-        </div>
+            <p>
+                Verify producers, products, and value-chain actors recorded
+                in KRAMA’s traceability system.
+            </p>
+        </a>
 
-        <div class="interest-card">
+        <a href="#" class="interest-card">
             <div class="contact-box">
                 <span>💬</span>
                 <h3>Raise a Concern</h3>
-                <p>Report non-compliance confidentially.</p>
+                <p>Report non-compliance or concerns confidentially.</p>
             </div>
-        </div>
+        </a>
     </div>
 </section>
 
